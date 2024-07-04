@@ -25,7 +25,7 @@ interface iOidcConnect {
 
 export const init = async (connectionOptions: iConnectionOptions): Promise<iOidcConnect> => {
   let responseTypes: string[] = []
-  let grantType = null
+  let grantType: GrantType | null = null
 
   if (connectionOptions.flow === SupportedFlow.DIRECT_GRANT) {
     responseTypes = ['id_token']
