@@ -1,4 +1,4 @@
-import { iTokenSet } from '../types'
+import { iTokenSet } from '../types.js'
 
 export interface iAuthService {
   login(username: string, password: string): Promise<iTokenSet>

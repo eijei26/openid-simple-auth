@@ -1,5 +1,5 @@
 import { BaseClient, Issuer } from 'openid-client';
-import { SupportedFlow, GrantType } from '../types';
+import { SupportedFlow, GrantType } from '../types.js';
 export interface iInitResponse {
     issuer: Issuer<BaseClient>;
     client: BaseClient;

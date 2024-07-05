@@ -1,5 +1,5 @@
 import { Issuer } from 'openid-client';
-import { GrantType, SupportedFlow } from '../types';
+import { GrantType, SupportedFlow } from '../types.js';
 const init = async (connectionOptions) => {
     let responseTypes = [];
     let grantType = null;

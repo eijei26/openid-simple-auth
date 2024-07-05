@@ -1,6 +1,6 @@
-import Auth from './auth';
+import Auth from './auth/index.js';
 declare const _default: {
-    initializeConnection: (connectionOptions: import("./init/interface").iConnectionOptions) => Promise<import("./init/interface").iInitResponse>;
+    initializeConnection: (connectionOptions: import("./init/interface.js").iConnectionOptions) => Promise<import("./init/interface.js").iInitResponse>;
     authService: typeof Auth;
 };
 export default _default;

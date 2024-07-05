@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GrantType } from '../types';
+import { GrantType } from '../types.js';
 class AuthService {
     initResponse;
     constructor(initResponse) {

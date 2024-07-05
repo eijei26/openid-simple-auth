@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const axios_1 = __importDefault(require("axios"));
-const types_1 = require("../types");
+const types_js_1 = require("../types.js");
 class AuthService {
     constructor(initResponse) {
         this.initResponse = initResponse;
@@ -68,7 +68,7 @@ class AuthService {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const tokenSet = yield this.initResponse.client.grant({
-                    grant_type: this.initResponse.grantType || types_1.GrantType.PASSWORD,
+                    grant_type: this.initResponse.grantType || types_js_1.GrantType.PASSWORD,
                     username,
                     password,
                     scope: 'openid profile email'

@@ -1,6 +1,6 @@
 import { Issuer } from 'openid-client'
-import { GrantType, SupportedFlow } from '../types'
-import { iConnectionOptions, iInitResponse } from './interface'
+import { GrantType, SupportedFlow } from '../types.js'
+import { iConnectionOptions, iInitResponse } from './interface.js'
 
 const init = async (connectionOptions: iConnectionOptions): Promise<iInitResponse> => {
   let responseTypes: string[] = []

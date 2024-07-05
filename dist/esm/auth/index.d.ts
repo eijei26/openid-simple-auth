@@ -1,6 +1,6 @@
-import { iInitResponse } from '../init/interface';
-import { iTokenSet } from '../types';
-import { iAuthService } from './interface';
+import { iInitResponse } from '../init/interface.js';
+import { iTokenSet } from '../types.js';
+import { iAuthService } from './interface.js';
 declare class AuthService implements iAuthService {
     private initResponse;
     constructor(initResponse: iInitResponse);

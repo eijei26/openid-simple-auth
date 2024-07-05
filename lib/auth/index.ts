@@ -1,7 +1,7 @@
 import axios from 'axios'
-import { iInitResponse } from '../init/interface'
-import { GrantType, iTokenSet } from '../types'
-import { iAuthService } from './interface'
+import { iInitResponse } from '../init/interface.js'
+import { GrantType, iTokenSet } from '../types.js'
+import { iAuthService } from './interface.js'
 
 class AuthService implements iAuthService {
   constructor(private initResponse: iInitResponse) {

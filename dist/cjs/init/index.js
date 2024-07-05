@@ -10,13 +10,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const openid_client_1 = require("openid-client");
-const types_1 = require("../types");
+const types_js_1 = require("../types.js");
 const init = (connectionOptions) => __awaiter(void 0, void 0, void 0, function* () {
     let responseTypes = [];
     let grantType = null;
-    if (connectionOptions.flow === types_1.SupportedFlow.DIRECT_GRANT) {
+    if (connectionOptions.flow === types_js_1.SupportedFlow.DIRECT_GRANT) {
         responseTypes = ['id_token'];
-        grantType = types_1.GrantType.PASSWORD;
+        grantType = types_js_1.GrantType.PASSWORD;
     }
     const issuer = yield openid_client_1.Issuer.discover(connectionOptions.basePath);
     const client = new issuer.Client({
