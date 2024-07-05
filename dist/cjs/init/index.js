@@ -9,9 +9,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.initializeConnection = void 0;
 const openid_client_1 = require("openid-client");
 const types_js_1 = require("../types.js");
-const init = (connectionOptions) => __awaiter(void 0, void 0, void 0, function* () {
+const initializeConnection = (connectionOptions) => __awaiter(void 0, void 0, void 0, function* () {
     let responseTypes = [];
     let grantType = null;
     if (connectionOptions.flow === types_js_1.SupportedFlow.DIRECT_GRANT) {
@@ -31,4 +32,4 @@ const init = (connectionOptions) => __awaiter(void 0, void 0, void 0, function* 
         clientId: connectionOptions.clientId,
     };
 });
-exports.default = init;
+exports.initializeConnection = initializeConnection;

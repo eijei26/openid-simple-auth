@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { GrantType } from '../types.js';
-class AuthService {
+export class AuthService {
     initResponse;
     constructor(initResponse) {
         this.initResponse = initResponse;
@@ -66,4 +66,3 @@ class AuthService {
         }
     }
 }
-export default AuthService;

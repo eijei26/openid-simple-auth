@@ -1,6 +1,6 @@
 import { Issuer } from 'openid-client';
 import { GrantType, SupportedFlow } from '../types.js';
-const init = async (connectionOptions) => {
+export const initializeConnection = async (connectionOptions) => {
     let responseTypes = [];
     let grantType = null;
     if (connectionOptions.flow === SupportedFlow.DIRECT_GRANT) {
@@ -20,4 +20,3 @@ const init = async (connectionOptions) => {
         clientId: connectionOptions.clientId,
     };
 };
-export default init;

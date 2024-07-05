@@ -3,7 +3,7 @@ import { iInitResponse } from '../init/interface.js'
 import { GrantType, iTokenSet } from '../types.js'
 import { iAuthService } from './interface.js'
 
-class AuthService implements iAuthService {
+export class AuthService implements iAuthService {
   constructor(private initResponse: iInitResponse) {
     this.initResponse = initResponse
   }
@@ -72,5 +72,3 @@ class AuthService implements iAuthService {
     }
   }
 }
-
-export default AuthService

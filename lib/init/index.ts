@@ -2,7 +2,7 @@ import { Issuer } from 'openid-client'
 import { GrantType, SupportedFlow } from '../types.js'
 import { iConnectionOptions, iInitResponse } from './interface.js'
 
-const init = async (connectionOptions: iConnectionOptions): Promise<iInitResponse> => {
+export const initializeConnection = async (connectionOptions: iConnectionOptions): Promise<iInitResponse> => {
   let responseTypes: string[] = []
   let grantType: GrantType | null = null
 
@@ -26,5 +26,3 @@ const init = async (connectionOptions: iConnectionOptions): Promise<iInitRespons
     clientId: connectionOptions.clientId,
   }
 }
-
-export default init
