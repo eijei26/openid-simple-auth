@@ -18,7 +18,6 @@ const types_js_1 = require("../types.js");
 class AuthService {
     constructor(initResponse) {
         this.initResponse = initResponse;
-        this.initResponse = initResponse;
     }
     logout(accessToken, idToken, sessionState) {
         return __awaiter(this, void 0, void 0, function* () {

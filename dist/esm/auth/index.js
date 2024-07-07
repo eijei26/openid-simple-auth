@@ -4,7 +4,6 @@ export class AuthService {
     initResponse;
     constructor(initResponse) {
         this.initResponse = initResponse;
-        this.initResponse = initResponse;
     }
     async logout(accessToken, idToken, sessionState) {
         try {

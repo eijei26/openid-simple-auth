@@ -13,3 +13,7 @@ export interface iTokenSet {
   sessionState?: string
   idToken?: string
 }
+
+export interface iCreatedUser {
+  
+}

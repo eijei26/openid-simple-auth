@@ -4,9 +4,7 @@ import { GrantType, iTokenSet } from '../types.js'
 import { iAuthService } from './interface.js'
 
 export class AuthService implements iAuthService {
-  constructor(private initResponse: iInitResponse) {
-    this.initResponse = initResponse
-  }
+  constructor(private initResponse: iInitResponse) {}
 
   async logout(accessToken: string, idToken: string, sessionState: string): Promise<void> {
     try {
