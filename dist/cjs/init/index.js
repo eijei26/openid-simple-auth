@@ -17,10 +17,8 @@ const axios_1 = __importDefault(require("axios"));
 const openid_client_1 = require("openid-client");
 const types_js_1 = require("../types.js");
 class ConnectionService {
-    constructor(connectionOptions, client) {
+    constructor(connectionOptions) {
         this.connectionOptions = connectionOptions;
-        this.client = client;
-        this.client = client;
     }
     deleteAdminSession(accessToken, idToken, sessionState) {
         return __awaiter(this, void 0, void 0, function* () {

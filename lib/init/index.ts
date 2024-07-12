@@ -1,15 +1,14 @@
 import axios from 'axios'
-import { BaseClient, Issuer } from 'openid-client'
+import { Issuer } from 'openid-client'
 import { GrantType, iTokenSet, SupportedFlow } from '../types.js'
 import { iConnectionOptions, iConnectionService, iInitResponse } from './interface.js'
 
 export class ConnectionService implements iConnectionService {
+  private client: any
+
   constructor (
     private connectionOptions: iConnectionOptions,
-    private client: BaseClient
-  ) {
-    this.client = client
-  }
+  ) {}
 
   async deleteAdminSession(accessToken: string, idToken: string, sessionState: string): Promise<void> {
     try {

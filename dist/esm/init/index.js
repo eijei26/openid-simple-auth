@@ -4,10 +4,8 @@ import { GrantType, SupportedFlow } from '../types.js';
 export class ConnectionService {
     connectionOptions;
     client;
-    constructor(connectionOptions, client) {
+    constructor(connectionOptions) {
         this.connectionOptions = connectionOptions;
-        this.client = client;
-        this.client = client;
     }
     async deleteAdminSession(accessToken, idToken, sessionState) {
         try {
